@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* Lenguaje y entorno */
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+
+    /* Seguridad y consistencia */
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* Rutas y salidas */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@context/*": ["src/context/*"],
+      "@pages/*": ["src/pages/*"],
+      "@services/*": ["src/services/*"],
+      "@styles/*": ["src/styles/*"],
+      "@assets/*": ["src/assets/*"],
+      "@helpers/*": ["src/helpers/*"]
+    },
+    "resolveJsonModule": true,
+    "outDir": "dist"
+  },
+  "include": ["**/*.{ts,tsx}"],
+  "exclude": ["node_modules", "dist"]
+}
