@@ -1,34 +1,35 @@
 {
   "compilerOptions": {
-    /* Lenguaje y entorno */
+    /* Lenguaje y módulos */
     "target": "ESNext",
-    "module": "ESNext",
+    "module": "esnext",
     "moduleResolution": "node",
+
+    /* JSX */
     "jsx": "react-jsx",
 
-    /* Seguridad y consistencia */
-    "strict": true,
+    /* Interoperabilidad */
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
 
-    /* Rutas y salidas */
-    "baseUrl": ".",
+    /* Resolución de rutas */
+    "baseUrl": "./src",
     "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@context/*": ["src/context/*"],
-      "@pages/*": ["src/pages/*"],
-      "@services/*": ["src/services/*"],
-      "@styles/*": ["src/styles/*"],
-      "@assets/*": ["src/assets/*"],
-      "@helpers/*": ["src/helpers/*"]
+      "@/*": ["./*"],
+      "@components/*": ["components/*"],
+      "@context/*": ["context/*"],
+      "@hooks/*": ["hooks/*"],
+      "@assets/*": ["assets/*"],
+      "@styles/*": ["styles/*"],
+      "@services/*": ["services/*"],
+      "@helpers/*": ["helpers/*"]
     },
-    "resolveJsonModule": true,
-    "outDir": "dist"
+
+    /* Calidad y chequeos */
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
   },
-  "include": ["**/*.{ts,tsx}"],
+  "include": ["src"],
   "exclude": ["node_modules", "dist"]
 }
